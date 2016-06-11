@@ -13,11 +13,11 @@ setup(
     keywords='',
     author=u'François Magimel',
     url='https://github.com/psychotests/pybonnardel',
-    license='BSD',
+    license='GPL License',
     classifiers=[
         "Environment :: Console",
         "Environment :: X11 Applications",
-        "License :: OSI Approved :: BSD License",
+        'License :: OSI Approved :: GPL License',
         "Natural Language :: English",
         "Operating System :: OS Independent",
         "Programming Language :: Python"
