@@ -10,7 +10,6 @@ setup(
     version='0.1',
     long_description=open('README').read(),
     description='Pybonnardel is a rapid game with multiple choice',
-    keywords='',
     author=u'François Magimel',
     url='https://github.com/psychotests/pybonnardel',
     license='GPL License',
