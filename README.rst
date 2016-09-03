@@ -1,6 +1,9 @@
 Pybonnardel
 ===========
 
+.. image:: https://travis-ci.org/psychotests/pybonnardel.svg?branch=master
+    :target: https://travis-ci.org/psychotests/pybonnardel
+    :alt: Build Status
 .. image:: https://readthedocs.org/projects/pybonnardel/badge/?version=latest
     :target: https://readthedocs.org/projects/pybonnardel/?badge=latest
     :alt: Documentation Status

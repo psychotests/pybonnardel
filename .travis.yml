@@ -1,0 +1,11 @@
+language: python
+
+python:
+    - 2.7
+
+install:
+    - pip install tox
+
+script:
+    - tox -e docs
+    - tox -e flake8
