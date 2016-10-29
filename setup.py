@@ -26,4 +26,5 @@ setup(
     ],
     platforms=['any'],
     packages=find_packages(exclude=['docs', 'tests']),
+    test_suite="tests",
 )
