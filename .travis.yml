@@ -9,3 +9,4 @@ install:
 script:
     - tox -e docs
     - tox -e flake8
+    - tox -e coverage
