@@ -1,0 +1,7 @@
+[report]
+omit =
+    tests/*
+    docs/*
+
+exclude_lines =
+    if __name__ == .__main__.:

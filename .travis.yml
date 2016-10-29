@@ -5,8 +5,12 @@ python:
 
 install:
     - pip install tox
+      pip install coveralls --use-mirrors
 
 script:
     - tox -e docs
     - tox -e flake8
     - tox -e coverage
+
+after_success:
+    - coveralls
