@@ -5,7 +5,7 @@ python:
 
 install:
     - pip install tox
-      pip install coveralls --use-mirrors
+    - pip install coveralls
 
 script:
     - tox -e docs
