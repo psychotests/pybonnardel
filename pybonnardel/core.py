@@ -85,12 +85,3 @@ class Bonnardel(object):
         random.shuffle(choices)
 
         return choices
-
-
-def main():
-    quiz = Bonnardel()
-    quiz.run()
-
-
-if __name__ == '__main__':
-    main()

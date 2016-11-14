@@ -10,6 +10,17 @@ class BonnardelTest(unittest.TestCase):
     def setUp(self):
         self.quiz = Bonnardel()
 
+    def test_run(self):
+        self.quiz.run()
+
+        # sequence
+        self.assertEqual(len(self.quiz.sequence), self.quiz.nb_symb)
+        self.assertGreaterEqual(len(self.quiz.sequence), 2)
+        # choices
+        self.assertEqual(len(self.quiz.choices), self.quiz.nb_choices)
+        # sol
+        self.assertLessEqual(self.quiz.sol, len(self.quiz.choices))
+
     def test_get_sequence(self):
         nb_rect = 3
         self.quiz.nb_rect_sol = 2
