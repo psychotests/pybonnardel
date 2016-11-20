@@ -21,6 +21,22 @@ class BonnardelTest(unittest.TestCase):
         # sol
         self.assertLessEqual(self.quiz.sol, len(self.quiz.choices))
 
+    def test_run_solution(self):
+        self.quiz.run()
+        nb_positions = 8
+        sol = self.quiz.choices[self.quiz.sol - 1]
+
+        # sol: arithmetic progression
+        for symb_id in range(self.quiz.nb_symb):
+            # get the step
+            a, b = self.quiz.sequence[symb_id][0:2]  # 2 min
+            step = (b - a) % nb_positions
+            # check the solution
+            symb_position = self.quiz.sequence[symb_id][-1]
+            for i in xrange(self.quiz.nb_rect_sol):
+                symb_position = (symb_position + step) % nb_positions
+                self.assertEqual(symb_position, sol[symb_id][i])
+
     def test_get_sequence(self):
         nb_rect = 3
         self.quiz.nb_rect_sol = 2
