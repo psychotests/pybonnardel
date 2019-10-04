@@ -11,6 +11,7 @@ script:
     - tox -e docs
     - tox -e flake8
     - tox -e coverage
+    - tox -e package
 
 after_success:
     - coveralls

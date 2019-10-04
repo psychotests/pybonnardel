@@ -11,6 +11,7 @@ setup(
     long_description=open('README.rst').read(),
     description='Pybonnardel is a rapid game with multiple choice',
     author=u'François Magimel',
+    author_email='francois.magimel@perdu.fr',
     url='https://github.com/psychotests/pybonnardel',
     license='GPL License',
     classifiers=[
