@@ -33,7 +33,7 @@ class BonnardelTest(unittest.TestCase):
             step = (b - a) % nb_positions
             # check the solution
             symb_position = self.quiz.sequence[symb_id][-1]
-            for i in xrange(self.quiz.nb_rect_sol):
+            for i in range(self.quiz.nb_rect_sol):
                 symb_position = (symb_position + step) % nb_positions
                 self.assertEqual(symb_position, sol[symb_id][i])
 
